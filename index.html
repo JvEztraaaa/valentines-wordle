@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Ica My Princess</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- splash screen -->
+<div id="splashScreen" class="splash-screen active">
+  <div class="splash-content">
+    <div class="splash-heart" id="splashHeart">
+      💖
+    </div>
+    <div class="splash-text">Hi Ica! Click me :b</div>
+    <div class="splash-hearts-container">
+      <span class="splash-mini-heart">💜</span>
+      <span class="splash-mini-heart">💕</span>
+      <span class="splash-mini-heart">💗</span>
+      <span class="splash-mini-heart">💝</span>
+      <span class="splash-mini-heart">🤍</span>
+    </div>
+  </div>
+</div>
+
+<!-- floating hearts -->
+<div class="hearts-bg" id="heartsBg"></div>
+
+<!-- decorative flowers -->
+<div class="deco-flower" style="top:8%;left:5%;">🌸</div>
+<div class="deco-flower" style="top:20%;right:4%;">🌹</div>
+<div class="deco-flower" style="bottom:18%;left:3%;">💐</div>
+<div class="deco-flower" style="bottom:10%;right:6%;">🌷</div>
+<div class="deco-flower" style="top:50%;left:2%;">🌺</div>
+<div class="deco-flower" style="top:40%;right:2%;">🌸</div>
+
+<!-- background music -->
+<audio id="bgMusic" loop preload="auto">
+  <source src="potsu.mp3" type="audio/mpeg">
+</audio>
+
+<!-- toast -->
+<div id="toast"></div>
+
+<!-- main header -->
+<header>
+  <h1>💜 Wordle 💜</h1>
+  <div class="subtitle">For Ica</div>
+  <button class="music-btn" title="Toggle Music">🔇</button>
+</header>
+
+<!-- main game -->
+<div id="game">
+  <div id="board"></div>
+  <div id="keyboard"></div>
+</div>
+
+<!-- game over overlay (failed all 6) -->
+<div class="overlay" id="gameOverOverlay">
+  <div class="go-box">
+    <h2>Oh no! 💔</h2>
+    <p style="color:var(--purple-light);margin-bottom:20px;">You've used all 6 attempts.</p>
+    <button class="go-btn primary" id="btnReveal">Reveal Answer</button>
+    <button class="go-btn secondary" id="btnPlayAgain">Play Again</button>
+    <p id="revealedWord" style="margin-top:18px;font-size:1.4rem;font-weight:700;color:var(--green);display:none;letter-spacing:6px;text-transform:uppercase;"></p>
+    <button class="go-btn primary" id="btnRevealNext" style="display:none;margin-top:10px;">Next 💌</button>
+  </div>
+</div>
+
+<!-- win block animation overlay -->
+<div id="winBlockOverlay">
+  <canvas id="confetti"></canvas>
+  <div id="winBlockContainer"></div>
+  <button class="go-btn primary win-next-btn" id="winBlockNext">Next 💌</button>
+</div>
+
+<!-- love page (full-screen wordle-style) -->
+<div class="page" id="lovePage">
+  <header>
+    <h1>💜 Wordle 💜</h1>
+    <div class="subtitle">Valentine's Edition</div>
+    <button class="music-btn" title="Toggle Music">🔇</button>
+  </header>
+  <div class="love-game">
+    <div class="love-board">
+      <div class="love-question">Do you love me? :3</div>
+      <div class="love-row" id="loveRow">
+        <div class="love-tile" id="lt0"></div>
+        <div class="love-tile" id="lt1"></div>
+        <div class="love-tile" id="lt2"></div>
+      </div>
+      <div class="love-hint">hint: of course you do! 💜</div>
+    </div>
+    <div id="loveKeyboard"></div>
+  </div>
+</div>
+
+<!-- final bouquet page -->
+<div class="bouquet-page" id="bouquetPage">
+  <canvas id="confetti2"></canvas>
+  <div class="bouquet-img-wrapper">
+    <img src="flower.png" alt="Bouquet" class="bouquet-img" />
+  </div>
+  <div class="bouquet-message" id="bouquetMessage">
+    <p class="bouquet-text bouquet-text-love">Mahal na mahal kita palagi, Ica 💜</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
