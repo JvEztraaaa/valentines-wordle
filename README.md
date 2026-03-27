@@ -1,6 +1,13 @@
 # 💕 Wordle for Valentines!
 
-A custom, romantic Wordle game made initially for my girlfriend for a special Valentine's Day surprise. This interactive web game combines the classic word-guessing challenge with heartfelt Valentine's themes, animations, and a personal touch.
+A custom, romantic Wordle game made initially for my girlfriend for a special Valentine's Day surprise. 
+
+
+## 📸 Game Preview
+
+![Game Preview 1](media/preview1.png) <br><br>
+![Game Preview 2](media/preview2.png) <br><br>
+![Game Preview 3](media/preview3.png) <br>
 
 
 ## 📱 How to Play
@@ -12,8 +19,6 @@ A custom, romantic Wordle game made initially for my girlfriend for a special Va
    - 🟩 **Green:** Correct letter, correct position
    - 🟨 **Yellow:** Correct letter, wrong position
    - ⬜ **Gray:** Letter not in word
-5. After winning or losing, answer the special love question
-6. See the final personalized bouquet page!
 
 
 ## 💕 Customization
@@ -27,10 +32,5 @@ To customize this game for your own Valentine:
 - Change the final message in the bouquet page section
 - Update the background color scheme in `styles.css`
 
-## 🎵 Media Files
 
-Place your media files in the `media/` folder:
-- **potsu.mp3:** Background music that plays during gameplay
-- **flower.png:** Flower/bouquet image shown on the final page
-
-## 💖 Made with Love
+💖 Made with Love
